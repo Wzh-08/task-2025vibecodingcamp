@@ -42,7 +42,7 @@ body::before {
   display: flex;
   align-items: flex-end;
   gap: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .age-header h1 {
@@ -185,6 +185,15 @@ button#calculateBtn:active {
   color: black;
 }
 
+.app-desc {
+  margin-top: -8px;      /* 往上靠近標題一點 */
+  margin-bottom: 15px;   /* 和「出生日期」稍微拉開 */
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
 @media (max-width: 600px) {
   .age-app {
     padding: 24px 20px 16px;
@@ -193,4 +202,5 @@ button#calculateBtn:active {
   .age-header h1 {
     font-size: 22px;
   }
+  
 }
