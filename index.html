@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>妙麗年齡換算機</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="age-app">
+      <header class="age-header">
+        <h1>妙麗年齡換算機</h1>        
+      </header>
+
+      <main>
+        <div class="field">          
+  <label for="birthdate">出生日期</label>
+  <div class="date-input-wrapper">
+    <input type="date" id="birthdate" />
+    <span class="date-placeholder">YYYY/MM/DD</span>
+  </div>
+</div>
+
+
+        <button id="calculateBtn" type="button">換算</button>
+
+        <div class="field">
+          <label for="humanAge">人類年齡</label>
+          <input
+            type="text"
+            id="humanAge"
+            readonly
+            placeholder="請先輸入出生日期並點擊換算"
+          />
+        </div>
+
+        <div class="field">
+          <label for="lifeStage">人類階段</label>
+          <input type="text" id="lifeStage" readonly />
+        </div>
+      </main>
+
+            <div class="bottom-actions">
+        <button id="clearBtn" type="button" class="secondary-btn">
+          清空
+        </button>
+      </div>
+     
+      
+      <footer class="age-footer">
+        <span>Hexschool 作品集</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
