@@ -8,23 +8,22 @@
   <body>
     <div class="age-app">
       <header class="age-header">
-        <h1>妙麗年齡換算機</h1>        
+        <h1>妙麗年齡換算機</h1>
       </header>
-      
+
       <p class="app-desc">
-        妙麗是狗狗 🐶，輸入狗狗的出生日期，<br>
+        妙麗是狗狗 🐶，輸入狗狗的出生日期，<br />
         就能換算出牠現在大約相當於人類幾歲與人生階段。
       </p>
 
       <main>
-        <div class="field">          
-  <label for="birthdate">出生日期</label>
-  <div class="date-input-wrapper">
-    <input type="date" id="birthdate" />
-    <span class="date-placeholder">YYYY/MM/DD</span>
-  </div>
-</div>
-
+        <div class="field">
+          <label for="birthdate">出生日期</label>
+          <div class="date-input-wrapper">
+            <input type="date" id="birthdate" />
+            <span class="date-placeholder">YYYY/MM/DD</span>
+          </div>
+        </div>
 
         <button id="calculateBtn" type="button">換算</button>
 
@@ -42,15 +41,24 @@
           <label for="lifeStage">人類階段</label>
           <input type="text" id="lifeStage" readonly />
         </div>
+
+        <!-- 灰色說明文字：在人類階段與按鈕之間 -->
+        <p class="hint-text">
+          儲存後，即可關閉頁面，下次開啟，狗狗年齡記錄還在<br />
+          點擊清空，則不存留記錄
+        </p>
       </main>
 
-            <div class="bottom-actions">
+      <!-- 底部兩顆按鈕：儲存＋清空 -->
+      <div class="bottom-actions">
+        <button id="saveBtn" type="button" class="secondary-btn">
+          儲存
+        </button>
         <button id="clearBtn" type="button" class="secondary-btn">
           清空
         </button>
       </div>
-     
-      
+
       <footer class="age-footer">
         <span>Hexschool 作品集</span>
       </footer>
